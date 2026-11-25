@@ -1,0 +1,31 @@
+[project]
+name = "anumanfm"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "u77w41", email = "90385123+U77w41@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.13.10,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "marimo>=0.26.0",
+    "mypy>=2.4.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
+
+[tool.ruff]
+extend-exclude = ["experiments/"]
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = ["^experiments/"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

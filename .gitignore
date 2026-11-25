@@ -221,3 +221,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local workspace data, env variants, and model checkpoints
+.venv/
+.env.*
+data/raw/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pkl
+*.joblib
+
+
+
+
+# Coding Agents Related directories/files
+.agents/
+.claude/
+AGENTS.md
+DECISIONS.md
